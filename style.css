@@ -69,10 +69,7 @@ ul {
     width: 100%;
     opacity: 0.9;
   }
-  .auswahl-elm{
-    display: block ruby;
-    border: 1px solid black;
-  }
+
   .auswahl-Button {
     background-color: #E7E9EB;
     color: rgb(51, 48, 48);
@@ -84,19 +81,20 @@ ul {
     opacity: 0.9;
     float:right;
   }
-  #auswahl-list{
-    height: 300px;
-    overflow:auto;
-    border:1px solid #ccc;
-    font:16px/26px Georgia, Garamond, Serif;
-  }
-  .tbl-spalte{
-    border: 1px solid #4d4d4d; 
-    border-collapse: collapse;
-    
-  }
-  .tbl-auwahl{
-    border: 1px solid #4d4d4d; 
+
+
+  table {
+    font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
   }
