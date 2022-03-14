@@ -12,15 +12,18 @@ body {
 h1 {
     color: #4d4d4d;
     padding: 20px 0 10px 0;
+    text-align: center
   }
   h2 {
     color: #4d4d4d;
+    text-align: center
   }
 
   p {
     color: #4d4d4d;
     font-size: 16px;
   }
+
 
 
 #logo a{
@@ -71,14 +74,12 @@ ul {
 /*Hero*/
 
 .hero h1 {
-  font-size: var(--font-3x-large);
   font-weight: bold;
   color: #dddddd;
 }
 
 
 .hero p {
-  font-size: var(--font-x-large);
   font-weight: bold;
   color: #dddddd;
 }
@@ -89,8 +90,7 @@ ul {
   justify-content: center;
   align-items: center;
   gap: 50px;
-  min-height: 300px;
-  height: 600px;
+  height: 500px;
   background: #485563;
   background: -webkit-linear-gradient(to right, #29323c, #485563);
   background: linear-gradient(to right, #29323c, #485563);
@@ -150,4 +150,35 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .hero {
+    width: 100%;
+    padding: 0;
+    margin-top:45px ;
+  }
+  #center-Box{
+    width:100%;
+    padding: 20px 0px;
+  }
+  ul{
+    height: 45px;
+  }
+  #logo a,li a{
+    padding: 12px;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .hero{
+    width: 100%;
+    height: 10%;
+  }
+  #center-Box{
+    width:100%;
+    padding: 20px 0px;
+  }
+
 }
