@@ -105,7 +105,7 @@ ul {
 }
 #center-Box{
   margin-top: 10px;
-  width: 700px;
+  width: 80%;
   margin: 5px auto;
   background: white;
   padding: 20px;
@@ -152,7 +152,7 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:1000px) {
   /* For tablets: */
   .hero {
     width: 100%;
@@ -180,5 +180,22 @@ tr:nth-child(even) {
     width:100%;
     padding: 20px 0px;
   }
-
+  @media only screen and (max-width:300px) {
+    /* For tablets: */
+    .hero {
+      width: 100%;
+      padding: 0;
+      margin-top:45px ;
+    }
+    #center-Box{
+      width:100%;
+      padding: 20px 0px;
+    }
+    ul{
+      height: 45px;
+    }
+    #logo a,li a{
+      padding: 12px;
+    }
+  }
 }
