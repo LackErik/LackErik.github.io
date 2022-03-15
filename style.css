@@ -1,49 +1,70 @@
+:root {
+  --text-site: 25px;
+  --text-grey: #4d4d4d;
+  --table-highlight: #dddddd;
+}
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
 body {
-    font-family: Arial;
-    background: white;
-    margin: 0;
-    padding: 0;
-  }
-
+  font-family: Arial;
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+footer{
+  text-align: center;
+}
 
 h1 {
-    color: #4d4d4d;
-    padding: 20px 0 10px 0;
-    text-align: center
-  }
-  h2 {
-    color: #4d4d4d;
-    text-align: center
-  }
-
-  p {
-    color: #4d4d4d;
-    font-size: 16px;
-  }
-
-
-
-#logo a{
-float: left;
-padding: 20px;
-color: white;
-text-decoration: none;
+  color: var(--text-grey);
+  padding: 30px 0 10px 0;
+  text-align: center
 }
-#navbar{
+h2 {
+  color: var(--text-grey);
+  text-align: center
+}
+
+p {
+  color: var(--text-grey);
+  font-size: var(--text-site);
+}
+
+/* ------- Nav-Bar  ------- */
+#navtest{
+display: flex;
+height: 100%;
+margin: auto;
+}
+nav{
+  position: fixed;
+  height: 79px;
+  background-color: #404040;
+  opacity: 0.85;
   position: fixed;
   width: 100%;
   top:0;
   right: 0;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
+#nav-backg{
+  background: black;
+  height: 79px;
+}
+#logo a{
+float: left;
+padding: 25px;
+color: white;
+text-decoration: none;
+font-size: var(--text-site);
+}
+
 
 ul {
     margin: 0;
     padding: 0;
-    background-color: #567dbd;
+   
     margin-left:auto;
     margin-right:auto;
     text-align:center;
@@ -58,8 +79,10 @@ ul {
     display:inline-block;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     text-decoration: none;
+    font-size: var(--text-site);
+    offset: 79px;
   }
   li button {
     display:inline-block;
@@ -71,7 +94,8 @@ ul {
   li a:hover {
     background-color: #111;
   }
-/*Hero*/
+
+  /* ------- Hero  ------- */
 
 .hero h1 {
   font-weight: bold;
@@ -95,14 +119,18 @@ ul {
   background: -webkit-linear-gradient(to right, #29323c, #485563);
   background: linear-gradient(to right, #29323c, #485563);
   right: 0;
-  margin-top: 60px;
 }
+
+
+
+  /* ------- Elemente  ------- */
 
 .trenner{
   width: 100%;
   border: 1px solid #dddddd;
 
 }
+
 #center-Box{
   margin-top: 10px;
   width: 80%;
@@ -111,29 +139,8 @@ ul {
   padding: 20px;
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
-.style-Button {
-  background-color: #E7E9EB;
-  color: rgb(51, 48, 48);
-  padding: 16px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.9;
-}
 
-.auswahl-Button {
-  background-color: #E7E9EB;
-  color: rgb(51, 48, 48);
-  padding: 5px;
-  margin: 16px;
-  border: none;
-  cursor: pointer;
-  width: 100px;
-  opacity: 0.9;
-  float:right;
-}
-
+ /* ------- Tabellen  ------- */
 
 table {
   font-family: arial, sans-serif;
@@ -142,15 +149,18 @@ table {
 }
 
 td, th {
-  border: 0px solid #dddddd;
+  border: 0px solid var( --table-highlight);
   text-align: left;
   padding: 8px;
   color: #4d4d4d;
+  font-size:var(--text-site);
 }
 
 tr:nth-child(even) {
-  background-color: #dddddd;
+  background-color:  var( --table-highlight);
 }
+
+ /* ------- Responsiv  ------- */
 
 @media only screen and (max-width:1000px) {
   /* For tablets: */
@@ -179,23 +189,5 @@ tr:nth-child(even) {
   #center-Box{
     width:100%;
     padding: 20px 0px;
-  }
-  @media only screen and (max-width:300px) {
-    /* For tablets: */
-    .hero {
-      width: 100%;
-      padding: 0;
-      margin-top:45px ;
-    }
-    #center-Box{
-      width:100%;
-      padding: 20px 0px;
-    }
-    ul{
-      height: 45px;
-    }
-    #logo a,li a{
-      padding: 12px;
-    }
   }
 }
